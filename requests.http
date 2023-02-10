@@ -1,0 +1,30 @@
+###
+POST http://localhost:9000/api/vehicles HTTP/1.1
+Content-Type: application/json
+
+{
+    "registration": "B13",
+    "brand": "Ferrari",
+    "model": "Personalizado",
+    "color": "Rojo"
+}
+
+###
+GET http://localhost:9000/api/vehicles  HTTP/1.1
+
+###
+GET http://localhost:9000/api/vehicles/63dbb8fdc9e5b61832952cd1 HTTP/1.1
+
+###
+PUT http://localhost:9000/api/vehicles/63dbb8fdc9e5b61832952cd1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "registration": "A12",
+    "brand": "Ford",
+    "model": "Clasico",
+    "color": "Negro"
+}
+
+###
+DELETE http://localhost:9000/api/vehicles/63dbb8fdc9e5b61832952cd1  HTTP/1.1
